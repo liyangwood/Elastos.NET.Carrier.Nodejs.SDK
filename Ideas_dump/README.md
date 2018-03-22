@@ -6,3 +6,4 @@
 - https://nodeaddons.com/
 - https://nodejs.org/api/addons.html
 
+- https://hackernoon.com/n-api-and-getting-started-with-writing-c-addons-for-node-js-cf061b3eae75
