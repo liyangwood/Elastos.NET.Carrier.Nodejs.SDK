@@ -42,7 +42,7 @@ const options = {
 
 
 const callback= {
-  idle: (args)=>{action('idle_callback', args)},
+  //idle: (args)=>{action('idle_callback', args)},
   connection_status: (args)=>{action('connection_callback', args)},
   friend_list: (args)=>{action('friends_list_callback', args)},
   friend_connection: (args)=>{action('friend_connection_callback', args)},
@@ -77,3 +77,19 @@ const killCarrier = (sessionId)=>{
     }
   })
 }
+
+ const action = (actionType, args)=>{
+   switch(actionType){
+     case "friend_message":{
+       showMessage(args);
+       break;
+     }
+     case "connection_status":{
+       console.log("Connection status changed, ", args);
+       break;;
+     }
+     default:{
+       console.log('Unhandled event,', actionType, args)
+     }
+   }
+ }

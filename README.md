@@ -16,3 +16,20 @@ We are going to make a demo web app to clone the Carrier Native SDK shell demo a
 
 We are going to make the same app but in browser using this NodeJs SDK. 
 
+# Carrier.Nodejs.SDK vs Carrier.Trinity.SDK
+## What is Carrier.Trinity project?
+Trinity project is a modified version of Chromium browser. It embedded the Elastos.Carrier into the browser, so that there is no need for a server. The decentralized webapp can be safely running inside the Trinity browser while connect to the P2P network using Carrier. Of course, other Elastos.RT services will be provided by the trinity as well.
+
+## Why do we need Carrier.Nodejs.SDK besides Carrier.Trinity?
+Most of standard web/server application has a backend, very likely running on Node.js. Sometime the webapp need other services such as database which cannot be provided by Trinity at this moment. That's to say the backend is required. For these kind of webapp, we provide the Node.js addon which is called Carrier.Nodejs.SDK.
+
+The addon can be used as a typical node.js modules using "import" or "require". It provide all the Carrier's functionalities to the js developers. 
+
+You can consider Carrier.Nodejs.SDK or Carrier.Trinity.SDK are just wrappers of Carrier C++ module. We try to keep both SDK using the same API so that you do not need to learn yet another sets of APIs. 
+
+# Where to learn more about Carrier module?
+This project is just a wrapper. For more detail of Carrier, please go to Elastos.NET.Carrier.Native.SDK
+
+# Are there any other SDK for other OS?
+Yes, we are working on the SDK for Android, iOS, Mac, Windows, Linux, Nodejs and client-side-js. Please visit our code repo frequently to check latest updates.
+
