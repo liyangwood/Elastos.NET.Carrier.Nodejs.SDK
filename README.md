@@ -33,3 +33,47 @@ This project is just a wrapper. For more detail of Carrier, please go to Elastos
 # Are there any other SDK for other OS?
 Yes, we are working on the SDK for Android, iOS, Mac, Windows, Linux, Nodejs and client-side-js. Please visit our code repo frequently to check latest updates.
 
+## Build from source
+
+### Ubuntu
+
+#### 1. Install Pre-Requirements
+
+Execute following command to install all pre-requirements.
+
+Install node
+```shell
+$ cd $(SRC_ROOT)
+$ git clone --branch v9.9.0 https://github.com/nodejs/node.git
+$ sudo chmod -R 755 node
+$ cd node
+$ sudo ./configure
+$ sudo make
+$ sudo make install
+```
+
+Check node version.
+```shell
+$ node --version
+v9.9.0
+```
+
+Install node-gype
+```shell
+sudo npm install -g node-gyp
+```
+
+#### 2. Build
+
+Change to `$(SRC_ROOT)/node` directory, and run:
+
+```shell
+$ node-gyp configure
+$ node-gyp build
+```
+
+## Demo
+```shell
+$ node demo.js
+```
+
