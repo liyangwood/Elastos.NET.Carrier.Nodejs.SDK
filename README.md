@@ -61,7 +61,7 @@ sudo npm install -g node-gyp
 
 ### Build
 
-Change to `$(SRC_ROOT)/node` directory, and run:
+From root directory run:
 
 ```shell
 $ node-gyp configure
