@@ -20,5 +20,5 @@
 // SOFTWARE.
 //
 
-const carrier = require('./build/Release/carrier');
-console.log(carrier.new("new")); // 'new'
+const Elastos = require('../js/elastos');
+console.log(Elastos.carrier.create('new')); // 'new'
