@@ -1,13 +1,20 @@
 {
   "targets": [
     {
-      "target_name": "carrier",
+      "target_name": "elca",
       "sources": [
-        "src/carrier.cc"
+        "src/elca.cc",
+        "src/callback.cc",
+        "src/datatype.cc",
+        "src/friend.cc",
+        "src/nodeinfo.cc",
       ],
      "include_dirs": ["./deps/include"],
      "libraries": [
-            "-L./deps/lib"
+            "-L./deps/lib",
+            "-lelacommon",
+            "-lelacarrier",
+            "-lelasession"
           ],
     }
   ]
